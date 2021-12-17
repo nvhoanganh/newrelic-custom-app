@@ -1,0 +1,24 @@
+###
+POST https://api.newrelic.com/graphql
+Content-Type: application/json
+API-Key: NRAK-TH96YRCC679D702MAGVMWU1MHNA
+X-REQUEST-TYPE: GraphQL
+
+query {
+  actor {
+    user {
+      name
+      email
+      id
+    }
+  }
+  requestContext {
+    userId
+    apiKey
+  }
+}
+
+###
+GET https://api.nerdsletter.net/cancellations
+Content-Type: application/json
+Authorization: Bearer ABC123
